@@ -15,7 +15,7 @@ optional arguments:
 ```
 python main.py playlists /path
 ```
-#License
+# License
 ```
 MIT License
 
