@@ -49,7 +49,7 @@ def parse(file: TextIO):
             continue
         elif line.startswith("#EXTINF:-1"):
             for tag in TAGS:
-                current_channel[tag] = re.findall(tag+'="(.*?)"', line)[0]
+                current_channel[tag] = re.findall(tag+'="(.*?)"', line)[0] if re.findall(tag+'="(.*?)"', line) else ""
                 current_channel["name"] = line.split('",')[-1]
         elif line.startswith("#EXTVLCOPT:http-referrer"):
             current_channel["http-referrer"] = re.findall(
