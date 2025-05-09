@@ -1,5 +1,5 @@
 # Purpose
-The idea is simple, this small script turns forlder with .m3u files into a sqlite database 
+This script turns forlder with .m3u files into a sqlite database 
 # Usage
 ```
 usage: main.py [-h] name path
